@@ -25,9 +25,7 @@
 <!-- VK Widget -->
     <script src="https://vk.com/js/api/openapi.js?139" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        VK.Widgets.Group("vk_groups", {mode: 3, width: "500"}, 20003922);
-    </script>
+
     <![endif]-->
 </head>
 <body>
@@ -36,12 +34,12 @@
             <div class="header-top clearfix">
                 <div class="container header-padding-container">
                     <div class="row">
-                        <div class="header-top__logo col-md-2 col-sm-2">
+                        <div class="header-top__logo col-md-2 col-sm-3 col-xs-6">
                             <a href="#" class="header-top__logo-link">
                                 <img src="img/logo.png" alt="" class="header-top__logo-img logo-img">
                             </a>
                         </div>
-                        <div class="header-top__telephone col-md-8 col-sm-7">
+                        <div class="header-top__telephone col-md-8 col-sm-6 hidden-sm hidden-xs">
                             <ul class="telephone-list telephone-list-position">
                                 <li class="telephone-list-all">
                                     <img src="img/manager-ico.png" alt="" class="telephone-list-all__img telephone-img">
@@ -57,9 +55,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="header-top__button-block col-md-2 col-sm-3">
+                        <div class="header-top__button-block col-md-2 col-sm-3 col-md-offset-0 col-lg-offset-0 col-sm-offset-6 hidden-xs">
                             <button class="header-top__button button-green button-position">Записаться</button>
                         </div>
+                        <div class="gamburger-block visible-xs hidden-sm hidden-md hidden-lg"><span class="gamburger-block__item glyphicon glyphicon-menu-hamburger"></span></div>
                     </div>
                 </div>
             </div>
@@ -73,7 +72,6 @@
                             <li class="header-nav__list-rout list-rout-position">
                                 <a href="#" class="header-nav__list-rout-link head-nav-link">О методе</a>
                                 <ul class="drop-list">
-                                    <!--item-text-style-->
                                     <li class="drop-list__item ">
                                         <a href="" class="drop-list__item-link item-link-style">Как работает?</a>
                                     </li>
@@ -100,14 +98,36 @@
                             <li class="header-nav__list-rout list-rout-position">
                                 <a href="#" class="header-nav__list-rout-link head-nav-link">Блог</a>
                             </li>
-                            <li class="header-nav__list-rout list-rout-position">
+                            <li class="header-nav__list-rout list-rout-position drop-list-768 hidden-xs">
+                                <a href="#" class="header-nav__list-rout-link head-nav-link">...</a>
+                                <ul class="drop-list drop-list__media-768 ">
+                                    <!--<li class="drop-list__media-768-triangle"></li>-->
+                                    <li class="drop-list__item">
+                                        <a href="" class="drop-list__item-link item-link-style">Стоимость и расписание</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a href="" class="drop-list__item-link item-link-style">Оплата</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a href="" class="drop-list__item-link item-link-style">Серсо в регионах</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-nav__list-rout list-rout-position media-none-768 visible-767">
                                 <a href="#" class="header-nav__list-rout-link head-nav-link">Стоимость и расписание</a>
                             </li>
-                            <li class="header-nav__list-rout list-rout-position">
+                            <li class="header-nav__list-rout list-rout-position media-none-768 visible-767">
                                 <a href="#" class="header-nav__list-rout-link head-nav-link">Оплата</a>
                             </li>
-                            <li class="header-nav__list-rout list-rout-position">
+                            <li class="header-nav__list-rout list-rout-position media-none-768 visible-767">
                                 <a href="#" class="header-nav__list-rout-link head-nav-link">Серсо в регионах</a>
+                            </li>
+                            <li class="header-nav__list-rout list-rout-position">
+                                <div class="mobaile-button__button">
+                                    <div class="header-top__button-block col-md-2 col-sm-3 col-md-offset-0 col-lg-offset-0 col-sm-offset-6">
+                                        <button class="header-top__button button-green button-position">Записаться</button>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -128,7 +148,26 @@
                                 Центр основан в 1994 году</p>
                         </div>
                     </div>
-                    <div class="header-bottom-info">
+                    <div class="header-top__telephone hidden-lg hidden-md clearfix">
+                        <ul class="telephone-list telephone-list-position">
+                            <li class="telephone-list-all">
+                                <img src="img/manager-ico.png" alt="" class="telephone-list-all__img telephone-img">
+                                <span class="telephone-list-all__text telephone-text">8 800 200 600 8</span>
+                            </li>
+                            <li class="telephone-list-all">
+                                <img src="img/phone_icon.png" alt="" class="telephone-list-all__img telephone-img">
+                                <span class="telephone-list-all__text telephone-text">+7 499 755 80 65</span>
+                            </li>
+                            <li class="telephone-list-all">
+                                <img src="img/phone_icon.png" alt="" class="telephone-list-all__img telephone-img">
+                                <span class="telephone-list-all__text telephone-text">+7 499 755 80 66</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="arrow-down-media arrow-down-media__item">
+                        <img src="img/arrow-down.png" alt="">
+                    </a>
+                    <div class="header-bottom-info hidden-xs hidden-sm">
                         <div class="header-bottom-info__item">
                             <div class="img-info-block img-info-block__color-green">
                                 <img src="img/img-seminar.png" class="img-info-block__img" alt="">
@@ -187,14 +226,64 @@
     <div class="news-and-schedule">
         <div class="container">
             <div class="row">
+                <div class="header-bottom-info hidden-lg hidden-md visible-sm visible-xs">
+                    <div class="header-bottom-info__item">
+                        <div class="img-info-block img-info-block__color-green">
+                            <img src="img/img-seminar.png" class="img-info-block__img" alt="">
+                        </div>
+                        <div class="text-info-block">
+                            <div class="text-info-block__title">
+                                <h2 class="text-info-block__title-item title-item-style">Вводный семинар
+                                    Бесплатно!</h2>
+                                <p class="text-info-block__text-about text-about-style">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. Проснувшись однажды утром после беспокойного сна, Грегор Замза...
+                                </p>
+                                <a href="#" class="text-info-block__text-link text-link-style">подробнее</a>
+                                <button class="text-info-block__button text-info-block__button-style header-top__button button-green">Записаться на семинар</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom-info__item">
+                        <div class="img-info-block img-info-block__color-orange">
+                            <img src="img/session-img.png" class="img-info-block__img" alt="">
+                        </div>
+                        <div class="text-info-block">
+                            <div class="text-info-block__title">
+                                <h2 class="text-info-block__title-item title-item-style">Вводный семинар
+                                    Бесплатно!</h2>
+                                <p class="text-info-block__text-about text-about-style">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. Проснувшись однажды утром после беспокойного сна, Грегор Замза...
+                                </p>
+                                <a href="#" class="text-info-block__text-link text-link-style">подробнее</a>
+                                <button class="text-info-block__button text-info-block__button-style header-top__button button-orange">Записаться на сеанс</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom-info__item">
+                        <div class="img-info-block img-info-block__color-orange">
+                            <img src="img/img-seminar.png" class="img-info-block__img" alt="">
+                        </div>
+                        <div class="text-info-block">
+                            <div class="text-info-block__title">
+                                <h2 class="text-info-block__title-item title-item-style">Вводный семинар
+                                    Бесплатно!</h2>
+                                <p class="text-info-block__text-about text-about-style">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. Проснувшись однажды утром после беспокойного сна, Грегор Замза...
+                                </p>
+                                <a href="#" class="text-info-block__text-link text-link-style">подробнее</a>
+                                <button class="text-info-block__button text-info-block__button-style header-top__button button-blue">Записаться к доктору</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="news-block clearfix">
-                    <div class="news-block-item clearfix">
+                    <div class="news-block-item news-block-item__width clearfix">
                         <div class="news-block__title">
                             <h2 class="news-block__title-text news-block__title-text-style">
                                 <a href="#" class="news-block__title-text-link">Новости <span class="glyphicon glyphicon-menu-right news-block__title-nwes-glif"></span></a>
                             </h2>
                         </div>
-                        <div class="single-news">
+                        <div class="single-news single-news__width">
                             <h2 class="single-news__title single-news__title-style">
                                 <a href="#" class="single-news__title-link">Новый филиал в Уфе</a>
                             </h2>
@@ -205,7 +294,7 @@
                                 в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. </p>
                             <p class="single-news__date single-news__date-style">16:00, 20 января 2016</p>
                         </div>
-                        <div class="single-news">
+                        <div class="single-news single-news__width">
                             <h2 class="single-news__title single-news__title-style">
                                 <a href="#" class="single-news__title-link">Новый филиал в Уфе</a>
                             </h2>
@@ -216,7 +305,7 @@
                                 в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. </p>
                             <p class="single-news__date single-news__date-style">16:00, 20 января 2016</p>
                         </div>
-                        <div class="single-news">
+                        <div class="single-news single-news__width">
                             <h2 class="single-news__title single-news__title-style">
                                 <a href="#" class="single-news__title-link">Новый филиал в Уфе</a>
                             </h2>
@@ -227,7 +316,7 @@
                                 в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову. </p>
                             <p class="single-news__date single-news__date-style">16:00, 20 января 2016</p>
                         </div>
-                        <div class="single-news">
+                        <div class="single-news single-news__width">
                             <h2 class="single-news__title single-news__title-style">
                                 <a href="#" class="single-news__title-link">Новый филиал в Уфе</a>
                             </h2>
@@ -279,22 +368,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="flag-sale clearfix">
-            <div class="flag-sale__left">
-                <p class="flag-sale__left-text-top">Скидка</p>
-                <p class="flag-sale__left-text-bottom">5%</p>
-                <div class="flag-sale__left-triangle-top"></div>
-                <div class="flag-sale__left-triangle-bottom"></div>
-            </div>
-            <div class="flag-sale__center">
-                <p class="flag-sale__center-text-top">Номер вашего купона</p>
-                <p class="flag-sale__center-text-bottom">1-7245213</p>
-            </div>
-            <div class="flag-sale__right">
-                <p class="flag-sale__right-text-top">Печать</p>
-                <a href="#" class="flag-sale__right-link"><img src="img/printer-icon.png" class="flag-sale__right-link-img"></a>
             </div>
         </div>
     </div>
@@ -588,6 +661,7 @@
                                             а я выгляжу даже лучше, чем до родов. Спасибо!
                                         </p>
                                     </div>
+                                    <a href="#" class="all-reviews-link all-reviews-link__item-style">читать статью полностью</a>
                                 </div>
                             </div>
                         </div>
@@ -939,6 +1013,22 @@
             </div>
         </div>
     </div>
+    <div class="flag-sale clearfix">
+        <div class="flag-sale__left">
+            <p class="flag-sale__left-text-top">Скидка</p>
+            <p class="flag-sale__left-text-bottom">5%</p>
+            <div class="flag-sale__left-triangle-top"></div>
+            <div class="flag-sale__left-triangle-bottom"></div>
+        </div>
+        <div class="flag-sale__center">
+            <p class="flag-sale__center-text-top">Номер вашего купона</p>
+            <p class="flag-sale__center-text-bottom">1-7245213</p>
+        </div>
+        <div class="flag-sale__right">
+            <p class="flag-sale__right-text-top">Печать</p>
+            <a href="#" class="flag-sale__right-link"><img src="img/printer-icon.png" class="flag-sale__right-link-img"></a>
+        </div>
+    </div>
 </main>
 <footer class="footer-bg">
     <div class="container">
@@ -989,6 +1079,15 @@
                     <div id="vk_groups"></div>
                 </div>
             </div>
+            <script type="text/javascript">
+                function VK_Widget_Init(){
+                    document.getElementById('vk_groups').innerHTML = "";
+                    var vk_width = document.getElementById('vk_groups').clientWidth;
+                    VK.Widgets.Group("vk_groups", {mode: 3, width: vk_width}, 20003922);
+                };
+                window.addEventListener('load', VK_Widget_Init, false);
+                window.addEventListener('resize', VK_Widget_Init, false);
+            </script>
         </div>
     </div>
 </footer>

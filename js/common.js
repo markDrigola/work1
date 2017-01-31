@@ -6,7 +6,30 @@
             slidesToShow: 4,
             slidesToScroll: 1,
             dots: true,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
         $('.reviews-slider-init').slick({
             infinite: true,
@@ -20,7 +43,30 @@
             slidesToShow: 4,
             slidesToScroll: 1,
             dots: true,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
 
         //Scroll head menu
@@ -52,5 +98,21 @@
 
             tempScrollTop = currentScrollTop;
         });
+
+        //gamburger
+        $('.gamburger-block').on('click', function () {
+            $('.header-nav__list').slideToggle();
+        });
+
+        $('.input-select-init').select2();
+        //slider reviews
+        // var elemClick = $('.all-reviews-link');
+        //
+        // elemClick.on('click', function (event) {
+        //     event.preventDefault();
+        //     $(this).prev().css({
+        //         'maxHeight':'50000px'
+        //     })
+        // })
     });
 })();
