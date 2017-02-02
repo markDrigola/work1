@@ -56,9 +56,9 @@ table {
     box-sizing: border-box;
 }
 input[type="text"]:focus { outline: none; }
-input[type="text"] {
-    padding-left: 10px;
-}
+/*input[type="text"] {*/
+    /*padding-left: 10px;*/
+/*}*/
 button {
     outline: none !important;
 }
