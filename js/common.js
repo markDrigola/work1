@@ -211,5 +211,15 @@
                 $(this).text('ОТВЕТИТЬ');
             }
         });
+
+        //Подгрузка картинки в модалку из ответов
+        var rewImg = $('.reviews-slide-right__img');
+
+        rewImg.on('click', function () {
+            var thisSrcImg = $(this).children('img').attr('src');
+
+            $('#myModal-5').modal('show');
+            $('#myModal-5').find('.sl-mod-img').children('img').attr('src', thisSrcImg);
+        })
     });
 })();

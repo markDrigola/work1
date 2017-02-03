@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Payment</title>
+    <title>Payment-paid</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -156,74 +156,24 @@
                 <h1 class="news-block__title-text news-block__title-text-style news-block__title-text-payment-title-position">
                     <span class="news-block__title-text-link blog-post-all__title-hover pay-title--mg">Оплата</span>
                 </h1>
-                <form action="" class="payment-form">
-                    <div class="payment-form__input">
-                        <p class="payment-form-error payment-form-error__message">
-                            Пример сообщения об ошибке в заполненной форме
-                            <img src="img/x-passive.png" alt="" class="payment-form-error__img-closed">
+                <div class="pay-wrap">
+                    <div class="payment-paid">
+                        <h2 class="payment-paid__title payment-paid__title--st">Оплачено</h2>
+                        <h3 class="payment-paid__title-name payment-paid__title-name--st">Иван Иванович Константинопольский</h3>
+                        <p class="payment-paid__text-op">
+                            вы оплатили сеанс коррекции веса,
+                            который пройдёт в городе
                         </p>
-                    </div>
-                    <div class="payment-form-input-group">
-                        <input type="text" class="payment-form-input-group__input payment-form-input-group__input-style" placeholder="Петров">
-                    </div>
-                    <div class="payment-form__input">
-                        <input type="text" class="payment-form-input-group__input payment-form-input-group__input-style">
-                    </div>
-                    <div class="payment-form__input">
-                        <input type="text" class="payment-form-input-group__input payment-form-input-group__input-style payment-form-input-group__input-error" placeholder="Отчество">
-                    </div>
-                    <div class="payment-form-select__input">
-                        <div class="select-drop-list-top">
-                            <div class="select-drop-list-top-block select-drop-list-top-block__all-style">
-                                <p class="item-select-text item-select-text__top">Выберите город</p>
-                                <p class="item-select-text item-select-text__bottom">И дату проведения</p>
-                                <img src="img/arrow-select.png" alt="" class="item-select-text__img">
-                            </div>
-                        </div>
-                        <div class="select-drop-list">
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Москва</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">1 111 1</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Питер</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">2 222 2</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Казань</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">3 333 3</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Москва</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">1 111 1</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Питер</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">2 222 2</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Казань</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">3 333 3</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Москва</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">1 111 1</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Питер</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">2 222 2</p>
-                            </div>
-                            <div class="select-drop-list__item select-drop-list__item-style">
-                                <p class="item-select-text item-select-text__top item-select-text__top-black-text">Казань</p>
-                                <p class="item-select-text item-select-text__bottom item-select-text__bottom-black-text">3 333 3</p>
-                            </div>
+                        <h3 class="payment-paid__title-name payment-paid__title-name--city">Москва</h3>
+                        <h3 class="payment-paid__title-name payment-paid__title-name--date">17 декабря 2016</h3>
+                        <div class="bord-bl-all"></div>
+                        <p class="payment-paid__text-op">Сумма:</p>
+                        <div class="cost-block">
+                            <p class="cost-text cost-text--mg">11500 ₽</p>
                         </div>
                     </div>
-                    <p class="payment-form-cost payment-form-cost__item-style">К оплате 11500 ₽</p>
-                    <div class="payment-form__input payment-form-submite">
-                        <input type="submit" class="header-top__button button-green payment-form-submite__input-style" value="Оплатить">
-                    </div>
-                </form>
+                    <div class="pay-shad"></div>
+                </div>
             </div>
         </div>
     </div>

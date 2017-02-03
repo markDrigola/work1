@@ -234,6 +234,9 @@
     position: relative;
     z-index: 1;
 }
+.news-dib {
+    display: inline-block;
+}
 .news-block__title-text-link {
     color: #404040;
     font-size: 45px;
@@ -244,10 +247,11 @@
     z-index: 2000;
     margin: 30px 0;
     display: inline-block;
+    outline: none !important;
+    text-decoration: none !important;
 }
 .news-block__title-text-link:hover {
     color: #4f94d2;
-    text-decoration: none !important;
 }
 .news-block {
     padding-bottom: 40px;
@@ -698,6 +702,7 @@
     position: relative;
     width: 195px;
     height: 145px;
+    cursor: pointer;
 }
 .reviews-slide-right__img-text-style {
     color: #fff;
@@ -1017,9 +1022,6 @@
 .mod-serv-list__item-style:hover .mod-serv-list__item-img {
     background: url("../img/serv-arrow.png") no-repeat center;
 }
-.modal-services {
-    margin-top: 100px;
-}
 .price-table-block__item:nth-child(odd) {
     background: #f7f9fa;
 }
@@ -1041,6 +1043,9 @@
     line-height: 30px;
     font-family: 'Conv_Roboto-Medium';
     border-bottom: 1px solid #dfe3e6;
+}
+.modal .modal-content {
+    margin-top: 120px;
 }
 .price-table-block__item-text-top {
     color: #404040;
@@ -1503,6 +1508,7 @@
 .reviews-comment-back__input-name-style {
     margin-bottom: 15px;
     height: 32px;
+    padding-left: 15px;
 }
 .reviews-comment-submite {
     float: right;
@@ -1887,8 +1893,116 @@
     color: #fff;
     font-size: 16px;
 }
-
-
+.payment-paid {
+    background: url("../img/pay-rec.png") no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    width: 100%;
+    max-width: 385px;
+    margin: 0 auto;
+    min-height: 364px;
+    position: relative;
+    z-index: 222;
+}
+.pay-wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.pay-shad {
+    background: url("../img/shadow-pay.png") no-repeat center;
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.payment-paid__title {
+    color: #404040;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Philosopher-Bold';
+    margin-bottom: 15px;
+}
+.payment-paid__title-name {
+    color: #404040;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: 'Conv_Roboto-Medium';
+}
+.payment-paid__title-name--st {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.payment-paid__title-name--city {
+    margin-top: 15px;
+}
+.payment-paid__title-name--date {
+    margin-bottom: 15px;
+}
+.pay-title--mg {
+    margin: 45px auto;
+}
+.bord-bl-all {
+    height: 1px;
+    background-color: #e6e8cc;
+    width: 100%;
+    margin: 15px auto;
+}
+.cost-text {
+    font-family: 'Conv_Roboto-Medium';
+    line-height: 28px;
+    color: #404040;
+    font-size: 28px;
+    font-weight: 500;
+}
+.cost-text--mg {
+    margin-bottom: 10px;
+}
+.payment-paid__text-op {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'Conv_Roboto-Regular';
+    margin: 10px 0 0 0;
+}
+.sl-mod-img {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+}
+.sl-mod-img--img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.mod-hed-ltb {
+    border: none;
+}
+.mod-hed-ltb .close {
+    color: #fff;
+    opacity: .8;
+    transition: opacity .3s;
+}
+.mod-hed-ltb .close:hover {
+    opacity: 1;
+}
+.mod-rew-light-box {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.pay-wrapp {
+    min-height: calc(100vh - 390px);
+}
 /*MEDIA*/
 @media (max-width: 1199px) {
     .header-bottom-info__item {
@@ -2160,6 +2274,9 @@
     }
     .drop-list {
         left: 20px;
+        width: calc(100% - 40px);
+        right: 20px;
+        top: 38px;
     }
     .header-nav__list {
         display: none;
@@ -2336,6 +2453,12 @@
     .slider-modal-block {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .pay-wrap {
+        padding: 0 15px;
+    }
+    .modal .modal-content {
+        margin-top: 30px;
     }
 }
 @media (max-width: 350px) {
