@@ -345,13 +345,14 @@
 }
 .flag-sale__left {
     float: left;
-    width: 83px;
+    width: 95px;
     height: 69px;
-    background: url("../img/teaser-bg.png") no-repeat center;
+    background: url(../img/teaser-bg.png) no-repeat center;
     text-align: center;
     padding-left: 10px;
     padding-top: 5px;
     position: relative;
+    background-size: cover;
 }
 .flag-sale__center {
     float: left;
@@ -420,7 +421,7 @@
 }
 .show-sale {
     opacity: 1;
-    right: -238px;
+    right: -248px;
 }
 .slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -2516,7 +2517,7 @@
         height: 164px;
     }
 }
-@media (min-height: 450px) {
+@media (min-height: 450px) and (max-width: 600px) {
     .header-nav__list {
         height: 360px;
         overflow: hidden;
